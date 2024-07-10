@@ -1,0 +1,30 @@
+.checkbox{
+    width: 26px;
+    height: 26px;
+    accent-color : #6C63FF;
+}
+
+
+.todo{
+    width: 500px;
+    height: 26px;
+    margin: auto;
+    border-bottom: 2px solid #6C63FF;
+    display: flex;
+    align-items: center;
+    gap : 15px;
+    margin-top : 20px;
+}
+
+.todo:hover{
+    transform: scale(1.02) translateY(10%);
+}
+
+.button{
+    background-color: #6C63FF;
+    color : #efebeb;
+    border-color: #7a73f5;
+    margin-left : 10px;
+    padding: 2px;
+    border-radius : 1px;
+}

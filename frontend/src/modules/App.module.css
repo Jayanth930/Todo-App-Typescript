@@ -1,0 +1,119 @@
+.container{
+    width: 750px;
+    height : 100vh;
+    margin: auto;
+}
+
+.header{
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heading{
+    font-size: 26px;
+    font-family:kanit;
+    color: #efebeb;
+    text-align: center;
+    margin-top : 40px;
+}
+
+.headerSearch{
+    display: flex;
+    justify-content: space-between;
+    height: 38px;
+}
+
+.searchbar{
+    width: 595px;
+    background-color: #9391b6;
+    color : #e6e5eb;
+    border-radius: 5px;
+    border-color: #6C63FF;
+    margin-left : 70px;
+}
+
+.searchicon{
+    display: flex;
+    position: absolute;
+    right: 5px;
+    top : 7px;
+}
+
+.button{
+    background-color: #6C63FF;
+    border-radius: 5px;
+    color : #F7F7F7;
+    border-color: #7a73f5;
+    width : 85px;
+    font-size : 18px;
+    text-align: center;
+}
+
+.button1{
+    background-color: #6C63FF;
+    border-radius: 5px;
+    color : #F7F7F7;
+    border-color: #7a73f5;
+    width: 38px;
+}
+
+.addbutton{
+    position: absolute;
+    bottom: 10px;
+    left : calc((100vw + 750px)/ 2 - 50px);
+    width : 30px;
+    height: 30px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.modalwrapper{
+    position: absolute;
+    left: 0; right: 0; top: 0 ; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    /* display: none; */
+    z-index: 1;
+}
+
+.modal{
+    position: relative;
+    width: 450px;
+    height: 289px;
+    margin: auto;
+    top: 118px;
+    border-radius: 16px;
+    border: 1px solid #e6e5eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #F7F7F7;
+}
+
+.modalheader{
+    text-align: center;
+}
+
+
+.modalsearchbar{
+    width: 440px;
+    background-color: #9391b6;
+    color : #e6e5eb;
+    border-radius: 5px;
+    border-color: #6C63FF;
+}
+
+.modalfooter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button3{
+    background-color: #6C63FF;
+    width: 97px;
+    border-radius: 5px;
+    color : #F7F7F7;
+    border-color: #7a73f5;
+}
