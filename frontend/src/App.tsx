@@ -34,11 +34,10 @@ const App : React.FC<{}> = ()=>{
 
   async function handleChange(){
     const substring = inputRef.current?.value 
-    console.log(substring)
-    if(substring){
-      
+    // console.log(substring)
+    if(substring){ 
       try {
-        const { data } = await axios.get<{}, AxiosResponse<successResponse | failureResponse>>(`${import.meta.env.VITE_APP_BACKEND_URL}/name/${substring}`)
+        const { data } = await axios.get<{}, AxiosResponse<successResponse | failureResponse>>(`${import.meta.env.VITE_APP_BACKEND_URL}/name/${substring.toLowerCase()}`)
         if(isSuccess(data)){
           setTodos(data.data as Todo[])
         }

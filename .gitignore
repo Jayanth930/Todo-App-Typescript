@@ -2,7 +2,7 @@
 node_modules
 
 # Build files
-dist/
+frontend/dist/
 
 # lock files
 yarn.lock
@@ -25,3 +25,9 @@ npm-debug.log*
 coverage
 
 .history/
+
+.rest
+
+frontend/.env
+
+backend/request.rest

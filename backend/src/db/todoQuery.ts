@@ -3,15 +3,14 @@ import { PrismaClient } from "@prisma/client";
 //types
 import { type Todo } from "../types";
 import { UpdateDto } from "../dtos/todo";
-const prisma = new PrismaClient()
+const prisma = new PrismaClient({log : ["error"]})
 
 
 
 export async function getTodos( substring? : string): Promise<Todo[]>{
     if(substring){
-        console.log(substring)
         const todos = await prisma.todo.findMany({
-            where : { name : { contains : substring } },
+            where : { name : { contains : substring , mode : "insensitive"}},
             orderBy : { createdAt : "asc" }
         })
         return todos

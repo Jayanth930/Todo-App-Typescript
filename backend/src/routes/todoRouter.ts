@@ -31,7 +31,7 @@ router.get("/",async (req : Request,res : Response<successResponse | failureResp
      } catch (error) {
         const failure : failureResponse =  {
             responseCode : 0 ,
-            message : "Error in fetching todos"
+            message : `Error in fetching todos ${error.message}`
         }
         res.status(500).json(failure)
      }   
