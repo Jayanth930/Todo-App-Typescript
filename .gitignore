@@ -28,6 +28,8 @@ coverage
 
 .rest
 
+backend/.env
+
 frontend/.env
 
 backend/request.rest
